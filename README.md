@@ -1,3 +1,3 @@
 # hello-world
 
-Just Another Hello Word
+Just Another Hello Word.
