@@ -1,0 +1,44 @@
+package praktikum_2;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Main extends ArrayList<String> {
+
+	public static void main(String[] args) {
+
+		Main datArrayList = new Main();
+		// ArrayList<String> datArrayList = new ArrayList<String>();
+
+		datArrayList.add(0, "Lala");
+		datArrayList.add(1, "Shani");
+		datArrayList.add(2, "Gracia");
+		datArrayList.add(3, "Kyla");
+		datArrayList.add(4, "Gio");
+		System.out.println(datArrayList.toString());
+
+		// Ubah isi Elemen pada index ke-3 menjadi Gina
+		// datArrayList.remove(3);
+		// datArrayList.add(3, "Gina");
+		datArrayList.set(3, "Gina");
+
+		System.out.println(datArrayList.toString());
+
+		// menyisipkan pada posisi Index 1 = Daniel Index 3 = Rusli
+		datArrayList.add(1, "Daniel");
+		datArrayList.add(3, "Rusli");
+		System.out.println(datArrayList.toString());
+
+		// Hapus Element diantara index ke-1 dan index ke-5
+		// datArrayList.subList(2, 5).clear();
+		datArrayList.removeRange(2, 5);
+		//datArrayList.trimToSize();
+		System.out.println(datArrayList.toString());
+
+		// Tampilkan Jumlah Element
+
+		System.out.println("Jumlah Element " + datArrayList.size());
+		System.out.println("Index Lala =" + datArrayList.indexOf("Lala"));
+		System.out.println("Index Gina =" + datArrayList.indexOf("Gina"));
+	}
+}
